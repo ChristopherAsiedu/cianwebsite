@@ -55,14 +55,12 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 }
 .brand { display: inline-flex; align-items: center; gap: 12px; }
 .brand-mark {
-  display: grid;
+  display: block;
   width: 42px;
   height: 42px;
-  place-items: center;
   border: 1px solid var(--gold-light);
   border-radius: 50%;
-  color: var(--gold-light);
-  font: 500 25px var(--serif);
+  object-fit: cover;
 }
 .brand-name { color: #fff; font-size: 12px; font-weight: 700; letter-spacing: .16em; }
 .brand-name span { color: #d3d0c8; font-size: 10px; font-weight: 500; letter-spacing: .17em; }
