@@ -1,3 +1,27 @@
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".slide-dots button");
+let slideIndex = 0;
+let slideTimer;
+
+function showSlide(index) {
+  slideIndex = (index + slides.length) % slides.length;
+  slides.forEach((slide, i) => slide.classList.toggle("is-active", i === slideIndex));
+  dots.forEach((dot, i) => dot.classList.toggle("is-active", i === slideIndex));
+}
+
+function startSlides() {
+  clearInterval(slideTimer);
+  slideTimer = setInterval(() => showSlide(slideIndex + 1), 5000);
+}
+
+dots.forEach((dot, i) => {
+  dot.addEventListener("click", () => {
+    showSlide(i);
+    startSlides();
+  });
+});
+startSlides();
+
 const menuToggle = document.querySelector(".menu-toggle");
 const primaryNav = document.querySelector("#primary-nav");
 const contactForm = document.querySelector("#contact-form");
