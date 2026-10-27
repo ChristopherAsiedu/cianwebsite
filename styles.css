@@ -95,8 +95,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   top: 50%;
   right: clamp(24px, 7vw, 100px);
   z-index: 0;
-  width: min(40vw, 560px);
-  aspect-ratio: 16 / 9;
+  width: min(40vw, 520px);
+  aspect-ratio: 1 / 1;
   margin: 0;
   overflow: hidden;
   border: 1px solid rgba(224, 183, 119, .55);
@@ -452,12 +452,12 @@ h1 em, h2 em { color: var(--gold-light); font-weight: 400; }
   .primary-nav.is-open { display: flex; flex-direction: column; }
   .primary-nav > a { padding: 13px 4px; border-bottom: 1px solid var(--line-dark); font-size: 12px; }
   .primary-nav .nav-cta { margin-top: 10px; padding: 13px 4px; border: 0; color: var(--gold-light); }
-  .hero { display: block; min-height: 0; padding: clamp(300px, 39svh, 350px) 24px 92px; }
+  .hero { display: block; min-height: 0; padding: 400px 24px 92px; }
   .hero-art {
     inset: 88px 22px auto;
     width: auto;
     height: auto;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 4 / 3;
     transform: none;
   }
   .hero-image { object-position: center; }
